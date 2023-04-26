@@ -11,8 +11,8 @@ type Props = {};
 const Navbar = (props: Props) => {
   const [open, setOpen] = useState(false);
   return (
-    <nav id="navigation" className="bg-white">
-      <div className="md:container relative flex px-5 md:px-0 md:py-3 py-8 justify-between items-center md:max-w-screen-xl md:mx-auto">
+    <nav id="navigation" className="bg-white relative z-[99]">
+      <div className="md:container flex px-5 md:px-0 md:py-3 py-8 justify-between items-center md:max-w-screen-xl md:mx-auto">
         <div>
           <Image
             src="/images/logo.svg"
@@ -26,14 +26,14 @@ const Navbar = (props: Props) => {
         <div
           className={`${
             open
-              ? "bg-darkBlue shadow-md absolute pt-12 pb-8 right-0 top-24 w-full z-50 md:hidden rounded-lg"
+              ? "bg-darkBlue shadow-md absolute pt-12 pb-8 w-[90%] top-20 z-50 md:hidden rounded-lg"
               : "hidden md:flex"
           }`}
         >
           <div
             className={`${
               open
-                ? "flex flex-col text-white gap-y-10 items-center"
+                ? "flex flex-col gap-y-10 items-center"
                 : "md:flex md:gap-x-8"
             }`}
           >
@@ -87,7 +87,7 @@ const Navbar = (props: Props) => {
           }`}
         ></div>
         <button
-          className="md:hidden flex bg-darkBlue p-2 rounded-full text-white"
+          className="md:hidden flex bg-darkBlue p-2 rounded-full z-50 text-white"
           onClick={() => setOpen(!open)}
         >
           {open ? <HiXMark /> : <HiBars3 />}

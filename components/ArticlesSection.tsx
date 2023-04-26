@@ -23,7 +23,7 @@ const ArticlesSection = (props: Props) => {
                   width={320}
                   height={320}
                   alt="article-img"
-                  className="object-cover w-full h-auto object-center"
+                  className="object-cover overflow-hidden w-full h-auto object-center"
                 />
             </div>
             <div className="flex flex-col gap-y-3 px-3">

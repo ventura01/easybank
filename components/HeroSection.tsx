@@ -6,9 +6,9 @@ type Props = {};
 
 const HeroSection = (props: Props) => {
   return (
-    <header id="home" className="relative overflow-x-clip -z-50">
+    <header id="home" className="relative overflow-x-hidden md:overflow-x-visible z-50">
       <div className="md:container md:max-w-screen-xl md:mx-auto grid grid-cols-1 md:grid-cols-2">
-        <div className="pt-[450px] flex flex-col gap-y-8 md:py-32 py-20 px-3 md:px-0">
+        <div className="pt-[500px] flex flex-col gap-y-8 md:py-32 py-20 px-3 md:px-0">
           <h1 className="md:text-6xl text-4xl text-center md:text-left text-darkBlue font-medium">
             Next generation
             <br className="md:flex hidden" /> digital banking
@@ -34,7 +34,7 @@ const HeroSection = (props: Props) => {
               className="object-cover object-center"
             />
           </div>
-          <div className="absolute -right-24 -top-32 -z-10">
+          <div className="absolute -right-16 -top-16 -z-10">
             <Image
               src="/images/image-mockups.png"
               width={650}

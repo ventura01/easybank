@@ -7,7 +7,17 @@ type Props = {};
 
 const Features = (props: Props) => {
   return (
-    <section id="features" className="bg-lightGrayishBlue -z-30">
+    <section id="features" className="bg-lightGrayishBlue -z-50">
+      {/* <div className="absolute -right-24 -top-12 z-40">
+            <Image
+              src="/images/image-mockups.png"
+              width={650}
+              height={650}
+              alt="hero-img"
+              className="object-cover object-center"
+              priority
+            />
+          </div> */}
       <div className="md:container md:max-w-screen-xl md:mx-auto px-3 md:px-0 py-20">
         <h2 className="text-darkBlue text-center md:text-left text-3xl font-light mb-5">
           Why choose Easybank?
